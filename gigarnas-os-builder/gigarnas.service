@@ -1,0 +1,20 @@
+[Unit]
+Description=GigaNas Core Platform Daemon & Modern Web Control Center
+After=network.target zfs-mount.service docker.service
+Wants=zfs-mount.service
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/gigarnas
+ExecStart=/usr/bin/python3 -m gigarnas_core.daemon
+Restart=always
+RestartSec=5s
+Environment=PYTHONUNBUFFERED=1
+
+# Resource limits & High File Descriptors
+LimitNOFILE=1048576
+LimitNPROC=524288
+
+[Install]
+WantedBy=multi-user.target

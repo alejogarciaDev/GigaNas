@@ -1,0 +1,17 @@
+{
+    "os_name": "GigaNas OS",
+    "version": "1.0.0-PRO",
+    "base_iso": "TrueNAS-SCALE-25.10.7.iso",
+    "kernel": "Linux 6.12 OpenZFS Enterprise Edition",
+    "features": [
+        "Dynamic ZFS ARC RAM Tuner (Zero-OOM en 2GB-8GB RAM)",
+        "Green Spindown Engine (Silencio y ahorro 70% energía)",
+        "RAM Log Buffer (tmpfs /var/log)",
+        "I/O Schedulers adaptativos (NVMe/SSD/HDD)",
+        "TCP BBR v2 & 10GbE network stack",
+        "Next-Gen Responsive Web Control Center",
+        "1-Click Docker App Store con soporte GPU QuickSync/NVENC",
+        "Tailscale Mesh VPN Zero-Config",
+        "GigaNas FlexPool (Mezcla de discos de distinto tamaño)"
+    ]
+}

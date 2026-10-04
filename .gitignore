@@ -1,0 +1,42 @@
+# ==========================================
+# GigaNas OS - Git Ignore Configuration
+# ==========================================
+
+# 1. Binary ISO images & Large payloads (>100MB forbidden on GitHub)
+*.iso
+*.img
+*.squashfs
+*.gnupd
+true nas original/
+gigarnas-os-builder/build_workspace/
+gigarnas-os-builder/output/*.iso
+
+# 2. Python bytecode & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# 3. System Backups & Local Data
+system_backups/
+storage_data/
+gigarnas_pools.json
+gigarnas_users.json
+gigarnas_devices.json
+gigarnas-apps-data/
+
+# 4. Flutter Mobile App Build Artifacts
+gigarnas_mobile/.dart_tool/
+gigarnas_mobile/build/
+gigarnas_mobile/.flutter-plugins
+gigarnas_mobile/.flutter-plugins-dependencies
+
+# 5. OS & IDE artifacts
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,117 @@
+/* ==========================================================================
+   GigaNas Enterprise Sober Theme (TrueNAS Classic / Professional Dark Matte)
+   ========================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+:root {
+    --tn-bg-main: #181b20;
+    --tn-sidebar-bg: #1c2026;
+    --tn-card-bg: #22262e;
+    --tn-card-sub: #1a1e24;
+    --tn-border: #2e3440;
+    --tn-text: #e5e9f0;
+    --tn-text-muted: #8892b0;
+    --tn-blue-btn: #0095d5;
+    --tn-blue-btn-hover: #0081ba;
+    --tn-green: #2ecc71;
+    --tn-purple: #9b59b6;
+    --tn-orange: #e67e22;
+}
+
+body {
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: var(--tn-bg-main);
+    color: var(--tn-text);
+}
+
+.font-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Sidebar Styling */
+.tn-sidebar {
+    background-color: var(--tn-sidebar-bg);
+    border-right: 1px solid var(--tn-border);
+}
+
+.tn-nav-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    color: #9aa5b1;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+    border-left: 3px solid transparent;
+}
+
+.tn-nav-link:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.04);
+}
+
+.tn-nav-link.active {
+    color: #00a2e8;
+    background-color: rgba(0, 162, 232, 0.08);
+    border-left: 3px solid #00a2e8;
+    font-weight: 600;
+}
+
+/* TrueNAS Split Card Design */
+.tn-card {
+    background-color: var(--tn-card-bg);
+    border: 1px solid var(--tn-border);
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.tn-card-header {
+    background-color: #262a33;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--tn-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tn-card-subpanel {
+    background-color: var(--tn-card-sub);
+    border-right: 1px solid var(--tn-border);
+}
+
+/* Classic Button */
+.tn-btn-primary {
+    background-color: var(--tn-blue-btn);
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 3px;
+    transition: background-color 0.15s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tn-btn-primary:hover {
+    background-color: var(--tn-blue-btn-hover);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #181b20;
+}
+::-webkit-scrollbar-thumb {
+    background: #2e3440;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3e4756;
+}
